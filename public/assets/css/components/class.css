@@ -1,0 +1,60 @@
+
+/* Flex */
+
+.flex
+{
+    display: flex;
+}
+
+.flex-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-gap
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex-between
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-around
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Generic */
+
+.bold
+{
+    font-weight: bold;
+}
+
+.none
+{
+    display: none;
+}
+
+/* Margin, Padding */
+
+.margin-none
+{
+    margin: 0;
+}
+
+.padding-none
+{
+    padding: 0;
+}

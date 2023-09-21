@@ -1,0 +1,35 @@
+body
+{
+    /* Change Default */
+    box-sizing: border-box;
+}
+
+h1
+{
+    font-size: 1.2em;
+}
+
+h2
+{
+    font-size: 1.1em;
+}
+
+p
+{
+    font-size: 1.1em;
+}
+
+a
+{
+    display: inline-block;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+/* Delete This Once Start */
+
+img
+{
+    width: 150px;
+    height: 150px;
+}
