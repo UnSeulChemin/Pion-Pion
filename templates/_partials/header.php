@@ -4,12 +4,13 @@
 
         <div>
 			<!-- <img src="public/assets/images/logo/favicon.png" alt="Logo"> -->
-			<h1>OneWay P</h1>
+			<h1>Pion Pion Mise</h1>
 		</div>
 
         <div>
-            <a href="./">Accueil</a>
-            <a href="filler">Filler</a>
+            <a href="./">accueil</a>
+            <a href="figurine">figurines</a>
+            <a href="card">cartes</a>
         </div>
 
     </nav>

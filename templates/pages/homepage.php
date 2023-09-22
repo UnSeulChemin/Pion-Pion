@@ -5,14 +5,7 @@
 
     <section>
 
-        <!-- <figure>
-            <img src="public/assets/images/pages/homepage.jpg" alt="Image de la page d'accueil">
-        </figure> -->
         
-        <div>
-            <h2>OneWay P</h2>
-            <p>Template</p>
-        </div>
 
     </section>
 

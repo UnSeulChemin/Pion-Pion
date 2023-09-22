@@ -2,16 +2,22 @@
 
 // require
 require_once('src/Controllers/HomepageController.php');
-require_once('src/Controllers/FillerController.php');
+require_once('src/Controllers/FigurineController.php');
+require_once('src/Controllers/CardController.php');
 
 // router
 try
 {
 	if (isset($_GET['page']) && !empty($_GET['page']))
 	{
-        if ($_GET['page'] === 'filler')
+        if ($_GET['page'] === 'figurine')
         {
-			filler();
+			figurine();
+        }
+
+        else if ($_GET['page'] === 'card')
+        {
+			card();
         }
 
 		else
