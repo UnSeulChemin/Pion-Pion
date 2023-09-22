@@ -11,6 +11,7 @@
             <a href="./">accueil</a>
             <a href="figurine">figurines</a>
             <a href="card">cartes</a>
+            <a href="plush">peluches</a>
         </div>
 
     </nav>

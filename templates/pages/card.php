@@ -6,7 +6,7 @@
     <section>
 
         <div>
-            <h2>Filler</h2>
+            <h2>Carte</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 

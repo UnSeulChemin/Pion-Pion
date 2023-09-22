@@ -4,6 +4,7 @@
 require_once('src/Controllers/HomepageController.php');
 require_once('src/Controllers/FigurineController.php');
 require_once('src/Controllers/CardController.php');
+require_once('src/Controllers/PlushController.php');
 
 // router
 try
@@ -18,6 +19,11 @@ try
         else if ($_GET['page'] === 'card')
         {
 			card();
+        }
+
+        else if ($_GET['page'] === 'plush')
+        {
+			plush();
         }
 
 		else

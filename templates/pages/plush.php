@@ -1,4 +1,4 @@
-<?php $title = "Figurine"; ?>
+<?php $title = "Peluche"; ?>
 
 <?php ob_start(); ?>
 <main>
@@ -6,7 +6,7 @@
     <section>
 
         <div>
-            <h2>Figurine</h2>
+            <h2>Peluche</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
