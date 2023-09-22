@@ -11,6 +11,25 @@
             at rerum dolorum error nulla eligendi ipsa, id rem delectus dolor pariatur odit voluptates doloribus.</p>
         </div>
 
+        <section class="section-content">
+
+            <div>
+                <?php
+                foreach ($figurines as $figurine)
+                { ?>
+                    <figure>
+                    <img src="public/assets/images/pages/figurines/1.jpg" alt="">
+                    </figure>
+
+                    <p><?= $figurine['name']; ?></p>
+                    <p class="bold"><?= $figurine['price']; ?> €</p>
+                    <p><?= $figurine['description']; ?></p>
+                <?php
+                } ?>
+            </div>
+
+        </section>        
+
     </section>
 
 </main>
