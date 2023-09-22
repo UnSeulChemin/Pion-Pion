@@ -10,7 +10,8 @@ body
 
 h1
 {
-    font-size: 1.2em;
+    font-size: 48px;
+    font-weight: bold;
 }
 
 h2
@@ -40,12 +41,4 @@ a
     text-decoration: none;
 
     display: inline-block;
-}
-
-/* Delete This Once Start */
-
-img
-{
-    width: 150px;
-    height: 150px;
 }
