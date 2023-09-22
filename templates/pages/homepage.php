@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 <main>
 
-    <section>
+    <section class="section-default">
 
         
 

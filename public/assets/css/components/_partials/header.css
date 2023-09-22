@@ -1,0 +1,38 @@
+header
+{
+    background-color: var(--background-color-main);
+
+    margin-top: 20px;
+}
+
+header nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a 
+{
+    width: 100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: var(--black);
+}
+
+header nav a:hover
+{
+    color: var(--secondary1);
+}
+
+header nav div:last-of-type
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

@@ -1,5 +1,9 @@
 body
 {
+    font-family: var(--font-family);
+    text-align: center;
+    background: var(--body);
+
     /* Change Default */
     box-sizing: border-box;
 }
@@ -11,19 +15,31 @@ h1
 
 h2
 {
-    font-size: 1.1em;
+    font-size: 1.2em;
+
+    padding-bottom: 20px;
+}
+
+h3
+{
+    font-size: 1.2em;
+
+    padding-bottom: 20px;
 }
 
 p
 {
     font-size: 1.1em;
+
+    padding-bottom: 10px;
 }
 
 a
 {
-    display: inline-block;
     font-size: 1.1em;
     text-decoration: none;
+
+    display: inline-block;
 }
 
 /* Delete This Once Start */

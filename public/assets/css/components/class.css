@@ -37,6 +37,11 @@
 
 /* Generic */
 
+.section-default
+{
+    margin-top: 20px;
+}
+
 .bold
 {
     font-weight: bold;

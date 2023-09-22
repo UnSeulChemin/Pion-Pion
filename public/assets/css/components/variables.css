@@ -1,5 +1,14 @@
 :root
 {
+    /* Font */
+    --font-family: 'Montserrat', 'Open Sans', sans-serif;
+
+    /* Section */
+    --body: #ffffff;
+
+    /* Secondary */
+    --secondary1: #8BC2D6;
+
     /* Base Color */
     --white: #ffffff;
     --black: #000000;
