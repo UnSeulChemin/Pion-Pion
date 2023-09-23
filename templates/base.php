@@ -12,6 +12,9 @@
 <body>
 
 	<?php
+		// navbar
+		require('_partials/navbar.php');
+
 		// header
 		require('_partials/header.php');
 

@@ -2,7 +2,7 @@
 
 require_once('src/Db/dbConnect.php');
 
-function getFigurine($getId = 1): array
+function getFigurine(int $getId = 1): array
 {
     $database = dbConnect();
 
@@ -31,7 +31,7 @@ function getFigurine($getId = 1): array
     return $figurines;
 }
 
-function getCount($getId = 1)
+function getCount(int $getId = 1)
 {
     $database = dbConnect();
 

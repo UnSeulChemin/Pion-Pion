@@ -90,11 +90,12 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card
 {
-    width: 25%;
+    width: 20%;
 
     display: flex;
     flex-direction: column;
@@ -105,6 +106,32 @@
     width: 100%;
 
     display: flex;
+}
+
+.card p:last-of-type
+{
+    padding-bottom: 0;
+}
+
+.aside-navbar
+{
+    background: #E8E8E8;
+
+    padding: 15px;
+}
+
+.aside-navbar a
+{
+    width: 100px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+
+    color: var(--black);
+}
+
+.aside-navbar a:hover
+{
+    color: var(--secondary1);
 }
 
 .bold

@@ -12,7 +12,7 @@ function figurine()
 	require('templates/pages/figurine.php');
 }
 
-function figurinePaginate($getId)
+function figurinePaginate(int $getId)
 {
 	// functions
 	$figurines = getFigurine($getId);
