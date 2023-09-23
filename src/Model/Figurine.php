@@ -2,12 +2,19 @@
 
 require_once('src/Db/dbConnect.php');
 
-function getFigurine(): array
+function getFigurine($getId = 1): array
 {
     $database = dbConnect();
 
-    $statement = $database->query("SELECT * FROM figurine ORDER BY id");
+    // number of figurine per page
+	$figurinePerPage = 8;
 
+	// limit
+	$start = ($getId -1) * $figurinePerPage;
+
+    $statement = $database->query('SELECT * FROM figurine ORDER BY id LIMIT ' . $start . ', ' . $figurinePerPage);
+
+    // get array
     $figurines = [];
     while ($row = $statement->fetch())
     {
@@ -21,5 +28,23 @@ function getFigurine(): array
         $figurines[] = $figurine;
     }
 
-	return $figurines;
+    return $figurines;
+}
+
+function getCount($getId = 1)
+{
+    $database = dbConnect();
+
+ 	$compterMot = $database->prepare('SELECT COUNT(*) AS count FROM figurine');
+	$compterMot->execute();
+
+	if ($compterMot->rowCount() > 0)
+	{
+		$nombreDeMot = $compterMot->fetch();
+	}
+
+	$motParPage = 8;
+	$countPage = ceil($nombreDeMot['count'] / $motParPage);
+
+    return $countPage;
 }

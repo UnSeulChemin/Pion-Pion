@@ -13,7 +13,17 @@ try
 	{
         if ($_GET['page'] === 'figurine')
         {
-			figurine();
+			if (isset($_GET['id']))
+			{
+				$getId = $_GET['id'];
+
+				figurinePaginate($getId);
+			}
+
+			else
+			{
+				figurine();
+			}
         }
 
         else if ($_GET['page'] === 'card')

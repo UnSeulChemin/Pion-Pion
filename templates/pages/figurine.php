@@ -37,8 +37,24 @@
             </div>
 
             <div>
-                <a href="">1</a>
-                <a href="">2</a>
+                <?php
+                for ($count = 1; $count <= $countPage; $count++)
+                { 
+                    if ($getId != $count)
+                    {
+                        ?>
+                        <a href="figurine/<?php echo $count; ?>"><?php echo $count; ?>k</a>
+                        <?php
+                    }
+
+                    else
+                    {
+                        ?>
+                        <a><?php echo $count; ?>z</a>
+                        <?php
+                    }
+                }
+                ?>
             </div>
 
         </section>        
