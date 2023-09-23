@@ -1,4 +1,4 @@
-<?php $title = "Carte"; ?>
+<?php $title = "Cartes"; ?>
 
 <?php ob_start(); ?>
 <main>

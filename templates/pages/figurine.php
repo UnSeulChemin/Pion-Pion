@@ -1,4 +1,4 @@
-<?php $title = "Figurine"; ?>
+<?php $title = "Figurines"; ?>
 
 <?php ob_start(); ?>
 <main>
@@ -22,11 +22,20 @@
                     <div class="card">
 
                         <figure>
-                            <img src="public/assets/images/pages/figurines/<?= $figurine['name']; ?>.jpg" alt="">
+                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/figurines/<?= $figurine['name']; ?>.jpg" alt="">
                         </figure>
 
-                        <p class="bold"><?= $figurine['price']; ?> €</p>
-                        <p><?= $figurine['description']; ?></p>
+                        <div>
+                            <p class="bold"><?= str_replace('.', ',', $figurine['price']); ?> €</p>
+                        </div>
+
+                        <div>
+                            <p><?= $figurine['description']; ?></p>
+                        </div>
+
+                        <div>
+                            <p>Payer</p>
+                        </div>
 
                     </div>
                     <?php
@@ -40,6 +49,11 @@
                 <?php
                 for ($count = 1; $count <= $countPage; $count++)
                 { 
+                    if (!isset($$getId))
+                    {
+                        $getId = 1;
+                    }
+
                     if ($getId != $count)
                     {
                         ?>
@@ -50,7 +64,7 @@
                     else
                     {
                         ?>
-                        <a><?php echo $count; ?>z</a>
+                        <a class="bold"><?php echo $count; ?>z</a>
                         <?php
                     }
                 }

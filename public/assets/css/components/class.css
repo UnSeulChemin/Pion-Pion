@@ -79,6 +79,11 @@
     margin: auto;
 }
 
+.active
+{
+    color: var(--secondary1);
+}
+
 .div-text p
 {
     text-align: justify;
@@ -87,7 +92,7 @@
 .display-card
 {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -101,6 +106,22 @@
     flex-direction: column;
 }
 
+.card p
+{
+    padding-bottom: 0;
+}
+
+.card figure
+{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.card figure:hover
+{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 .card img
 {
     width: 100%;
@@ -108,9 +129,50 @@
     display: flex;
 }
 
-.card p:last-of-type
+.card div:nth-child(2)
 {
-    padding-bottom: 0;
+    padding: 25px 0;
+}
+
+.card div:nth-child(2) p
+{
+    font-size: 1.3em;
+}
+
+.card div:nth-child(3)
+{
+    height: 50px;
+
+    margin-bottom: 25px;
+}
+
+.card div:nth-child(3) p
+{
+    text-align: left;
+}
+
+.card div:nth-child(3) p:hover
+{
+    cursor: pointer;
+    color: var(--secondary1);
+}
+
+.card div:nth-child(4) p
+{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: normal;
+    color: var(--white);
+    background-color: var(--flash1);
+
+    padding: 12px 15px;
+    border-radius: 2px;
+}
+
+.card div:nth-child(4) p:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .aside-navbar
