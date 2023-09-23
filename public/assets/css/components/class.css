@@ -89,6 +89,26 @@
     text-align: justify;
 }
 
+.display-menu-paginate
+{
+    width: 85%;
+
+    margin: 20px auto;
+    padding: 20px 0;
+    border: 1px solid #F0F0F0;
+}
+
+.display-menu-paginate div
+{
+    display: flex;
+    justify-content: center;
+}
+
+.display-menu-paginate div p
+{
+    padding-bottom: 0;
+}
+
 .display-card
 {
     display: flex;

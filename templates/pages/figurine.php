@@ -45,30 +45,45 @@
     
             </div>
 
-            <div>
+            <div class="display-menu-paginate">
+
+                <div>
+                    <p>Pages :</p>
                 <?php
                 for ($count = 1; $count <= $countPage; $count++)
                 { 
-                    if (!isset($$getId))
+                    if (!isset($getId))
                     {
                         $getId = 1;
                     }
 
                     if ($getId != $count)
                     {
-                        ?>
-                        <a href="figurine/<?php echo $count; ?>"><?php echo $count; ?>k</a>
-                        <?php
+                        if (isset($_GET['id']) && !empty($_GET['id']))
+                        {
+                            ?>
+                            <a href="../figurine/<?php echo $count; ?>"><?php echo $count; ?></a>                   
+                            <?php
+                        }
+
+                        else
+                        {
+                            ?>
+                            <a href="figurine/<?php echo $count; ?>"><?php echo $count; ?></a>
+                            <?php
+                        }
                     }
 
                     else
                     {
                         ?>
-                        <a class="bold"><?php echo $count; ?>z</a>
+                        <a class="active"><?php echo $count; ?></a>
                         <?php
                     }
                 }
                 ?>
+                </div>
+
             </div>
 
         </section>        
