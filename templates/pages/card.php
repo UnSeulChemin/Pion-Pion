@@ -24,6 +24,7 @@
                         <figure class="figure-card-image">
                             <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/cartes/<?= $card['name']; ?>.jpg" alt="">
                             <?= $card['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
+                            <?= $card['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
                             <span class="abs-date"><?= date('d/m/Y', strtotime($card['created_at'])); ?></span>
                         </figure>
 

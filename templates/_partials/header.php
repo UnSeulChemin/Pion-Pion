@@ -75,14 +75,22 @@
             }		
 
             // Peluches
-            if (isset($_GET['page']) && $_GET['page'] == "plush")
+            if (isset($_GET['page']) && $_GET['page'] == "plush" && !isset($_GET['id']))
             {
                 ?> <a <a class="active" href="plush">peluches</a> <?php
             }
 
             else if (isset($_GET['id']) && !empty($_GET['id']))
             {
-                ?> <a href="../plush">peluches</a> <?php
+                if (isset($_GET['page']) && $_GET['page'] == "plush")
+                {
+                    ?> <a class="active" href="../plush">peluches</a> <?php
+                }
+
+                else
+                {
+                    ?> <a href="../plush">peluches</a> <?php             
+                } 
             }
 
             else

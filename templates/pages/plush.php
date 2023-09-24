@@ -24,6 +24,7 @@
                         <figure class="figure-card-image">
                             <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/peluches/<?= $plush['name']; ?>.jpg" alt="">
                             <?= $plush['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
+                            <?= $plush['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
                             <span class="abs-date"><?= date('d/m/Y', strtotime($plush['created_at'])); ?></span>
                         </figure>
 

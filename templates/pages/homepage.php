@@ -66,6 +66,67 @@
 
         </section>      
 
+        <div class="div-title">
+            <h2>produits phares</h2>
+        </div>
+
+        <section class="section-content">
+
+            <div class="display-card">
+
+                <?php
+                foreach ($products as $product)
+                {   
+                    if ($product['category'] == 'figurine')
+                    {
+                        $category = 'figurines';
+                    }
+
+                    else if ($product['category'] == 'card')
+                    {
+                        $category = 'cartes';
+                    }
+
+                    else if ($product['category'] == 'plush')
+                    {
+                        $category = 'peluches';
+                    }
+
+                    ?>
+                    <div class="card">
+
+                        <figure class="figure-card-image">
+                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category ?>/<?= $product['name']; ?>.jpg" alt="">
+                            <?= $product['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
+                            <span class="abs-date"><?= date('d/m/Y', strtotime($product['created_at'])); ?></span>
+                        </figure>
+
+                        <div>
+                            <p class="bold"><?= str_replace('.', ',', $product['price']); ?> €</p>
+                        </div>
+
+                        <div>
+                            <p><?= $product['description']; ?></p>
+                        </div>
+
+                        <div>
+                            <p>Payer</p>
+                        </div>
+
+                    </div>
+                    <?php
+                }
+
+                ?>
+
+            </div>
+            
+            <div class="div-link">
+                <a class="active" href="./">Voir toutes les promos</a>
+            </div>
+
+        </section>
+
     </section>
 
 </main>

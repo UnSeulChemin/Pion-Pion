@@ -24,6 +24,7 @@
                         <figure class="figure-card-image">
                             <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/figurines/<?= $figurine['name']; ?>.jpg" alt="">
                             <?= $figurine['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
+                            <?= $figurine['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
                             <span class="abs-date"><?= date('d/m/Y', strtotime($figurine['created_at'])); ?></span>
                         </figure>
 
