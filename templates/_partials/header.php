@@ -34,7 +34,15 @@
 
             else if (isset($_GET['id']) && !empty($_GET['id']))
             {
-                ?> <a class="active" href="../figurine">figurines</a> <?php
+                if (isset($_GET['page']) && $_GET['page'] == "figurine")
+                {
+                    ?> <a class="active" href="../figurine">figurines</a> <?php
+                }
+
+                else
+                {
+                    ?> <a href="../figurine">figurines</a> <?php
+                }
             }
 
             else
@@ -43,14 +51,22 @@
             }
 
             // Cartes
-            if (isset($_GET['page']) && $_GET['page'] == "card")
+            if (isset($_GET['page']) && $_GET['page'] == "card" && !isset($_GET['id']))
             {
-                ?> <a <a class="active" href="card">cartes</a> <?php
+                ?> <a class="active" href="card">cartes</a> <?php
             }
 
             else if (isset($_GET['id']) && !empty($_GET['id']))
             {
-                ?> <a href="../card">cartes</a> <?php
+                if (isset($_GET['page']) && $_GET['page'] == "card")
+                {
+                    ?> <a class="active" href="../card">cartes</a> <?php
+                }
+
+                else
+                {
+                    ?> <a href="../card">cartes</a> <?php                  
+                }
             }
 
             else
