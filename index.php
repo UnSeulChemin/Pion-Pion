@@ -28,7 +28,17 @@ try
 
         else if ($_GET['page'] === 'card')
         {
-			card();
+			if (isset($_GET['id']))
+			{
+				$getId = $_GET['id'];
+
+				cardPaginate($getId);
+			}
+
+			else
+			{
+				card();
+			}
         }
 
         else if ($_GET['page'] === 'plush')

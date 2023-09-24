@@ -1,5 +1,6 @@
 <?php
 
+// require
 require_once('src/Model/Figurine.php');
 
 function figurine()
