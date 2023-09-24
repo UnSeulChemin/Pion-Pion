@@ -22,7 +22,8 @@ function getPlush(int $getId = 1): array
             'id' => $row['id'],
             'name' => $row['name'],
             'price' => $row['price'],
-            'description' => $row['description']
+            'description' => $row['description'],
+            'created_at' => $row['created_at']
         ];
 
         $plushs[] = $plush;

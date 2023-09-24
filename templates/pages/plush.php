@@ -21,8 +21,9 @@
                     ?>
                     <div class="card">
 
-                        <figure>
+                        <figure class="figure-card-image">
                             <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/peluches/<?= $plush['name']; ?>.jpg" alt="">
+                            <span><?= date('d/m/Y', strtotime($plush['created_at'])); ?></span>
                         </figure>
 
                         <div>

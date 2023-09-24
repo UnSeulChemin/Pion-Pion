@@ -34,8 +34,9 @@
                     ?>
                     <div class="card">
 
-                        <figure>
+                        <figure class="figure-card-image">
                             <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category ?>/<?= $new['name']; ?>.jpg" alt="">
+                            <span><?= date('d/m/Y', strtotime($new['created_at'])); ?></span>
                         </figure>
 
                         <div>

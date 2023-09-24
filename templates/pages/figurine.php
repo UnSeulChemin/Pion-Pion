@@ -21,8 +21,9 @@
                     ?>
                     <div class="card">
 
-                        <figure>
+                        <figure class="figure-card-image">
                             <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/figurines/<?= $figurine['name']; ?>.jpg" alt="">
+                            <span><?= date('d/m/Y', strtotime($figurine['created_at'])); ?></span>
                         </figure>
 
                         <div>

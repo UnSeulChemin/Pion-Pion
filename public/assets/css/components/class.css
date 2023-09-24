@@ -86,6 +86,25 @@
     background: var(--secondary2);
 }
 
+.figure-card-image
+{
+    position: relative;
+}
+
+.figure-card-image span
+{
+    background: var(--white);
+
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    padding: 2px;
+    border-top: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    border-left: 1px solid #F0F0F0;
+}
+
 .div-link a
 {
     font-size: 0.9em;

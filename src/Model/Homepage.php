@@ -37,7 +37,8 @@ function getAllFigurine(): array
             'name' => $row['name'],
             'category' => $row['category'],
             'price' => $row['price'],
-            'description' => $row['description']
+            'description' => $row['description'],
+            'created_at' => $row['created_at']
         ];
 
         $figurines[] = $figurine;
@@ -61,7 +62,8 @@ function getAllCard(): array
             'name' => $row['name'],
             'category' => $row['category'],
             'price' => $row['price'],
-            'description' => $row['description']
+            'description' => $row['description'],
+            'created_at' => $row['created_at']
         ];
 
         $cards[] = $card;
@@ -85,7 +87,8 @@ function getAllPlush(): array
             'name' => $row['name'],
             'category' => $row['category'],
             'price' => $row['price'],
-            'description' => $row['description']
+            'description' => $row['description'],
+            'created_at' => $row['created_at']
         ];
 
         $plushs[] = $plush;
