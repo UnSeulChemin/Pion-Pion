@@ -12,7 +12,7 @@ function getPlush(int $getId = 1): array
 	// limit
 	$start = ($getId -1) * $plushPerPage;
 
-    $statement = $database->query('SELECT * FROM plush ORDER BY id LIMIT ' . $start . ', ' . $plushPerPage);
+    $statement = $database->query('SELECT * FROM plush ORDER BY created_at DESC LIMIT ' . $start . ', ' . $plushPerPage);
 
     // get array
     $plushs = [];

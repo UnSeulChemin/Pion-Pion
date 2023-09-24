@@ -12,7 +12,7 @@ function getFigurine(int $getId = 1): array
 	// limit
 	$start = ($getId -1) * $figurinePerPage;
 
-    $statement = $database->query('SELECT * FROM figurine ORDER BY id LIMIT ' . $start . ', ' . $figurinePerPage);
+    $statement = $database->query('SELECT * FROM figurine ORDER BY created_at DESC LIMIT ' . $start . ', ' . $figurinePerPage);
 
     // get array
     $figurines = [];

@@ -11,15 +11,58 @@
 
         <section class="section-content">
 
+            <div class="display-card">
+
+                <?php
+                foreach ($news as $new)
+                {   
+                    if ($new['category'] == 'figurine')
+                    {
+                        $category = 'figurines';
+                    }
+
+                    else if ($new['category'] == 'card')
+                    {
+                        $category = 'cartes';
+                    }
+
+                    else if ($new['category'] == 'plush')
+                    {
+                        $category = 'peluches';
+                    }
+
+                    ?>
+                    <div class="card">
+
+                        <figure>
+                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category ?>/<?= $new['name']; ?>.jpg" alt="">
+                        </figure>
+
+                        <div>
+                            <p class="bold"><?= str_replace('.', ',', $new['price']); ?> €</p>
+                        </div>
+
+                        <div>
+                            <p><?= $new['description']; ?></p>
+                        </div>
+
+                        <div>
+                            <p>Payer</p>
+                        </div>
+
+                    </div>
+                    <?php
+                }
+
+                ?>
+
+            </div>
+            
             <div>
-                <h6>img1</h6>
-                <h6>img2</h6>
-                <h6>img3</h6>
-                <h6>img4</h6>
-                <h6>img5</h6>
+                <p>voir plus..</p>
             </div>
 
-        </section>
+        </section>      
 
     </section>
 

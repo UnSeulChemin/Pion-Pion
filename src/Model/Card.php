@@ -12,7 +12,7 @@ function getCard(int $getId = 1): array
 	// limit
 	$start = ($getId -1) * $cardPerPage;
 
-    $statement = $database->query('SELECT * FROM card ORDER BY id LIMIT ' . $start . ', ' . $cardPerPage);
+    $statement = $database->query('SELECT * FROM card ORDER BY created_at DESC LIMIT ' . $start . ', ' . $cardPerPage);
 
     // get array
     $cards = [];
