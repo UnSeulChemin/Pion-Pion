@@ -20,6 +20,9 @@
 
 		// content
 		echo $content;
+
+		// footer
+		require('_partials/footer.php');
 	?>
 
 </body>

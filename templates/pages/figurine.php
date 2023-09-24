@@ -47,41 +47,48 @@
 
             <div class="display-menu-paginate">
 
-                <div>
-                    <p>Pages :</p>
-                <?php
-                for ($count = 1; $count <= $countPage; $count++)
-                { 
-                    if (!isset($getId))
-                    {
-                        $getId = 1;
-                    }
+                <div class="display-menu-content">
 
-                    if ($getId != $count)
-                    {
-                        if (isset($_GET['id']) && !empty($_GET['id']))
+                    <div>
+                        <p>Pages :</p>
+                    </div>
+
+                    <div>
+                    <?php
+                    for ($count = 1; $count <= $countPage; $count++)
+                    { 
+                        if (!isset($getId))
                         {
-                            ?>
-                            <a href="../figurine/<?php echo $count; ?>"><?php echo $count; ?></a>                   
-                            <?php
+                            $getId = 1;
+                        }
+
+                        if ($getId != $count)
+                        {
+                            if (isset($_GET['id']) && !empty($_GET['id']))
+                            {
+                                ?>
+                                <a href="../figurine/<?php echo $count; ?>"><?php echo $count; ?></a>                   
+                                <?php
+                            }
+
+                            else
+                            {
+                                ?>
+                                <a href="figurine/<?php echo $count; ?>"><?php echo $count; ?></a>
+                                <?php
+                            }
                         }
 
                         else
                         {
                             ?>
-                            <a href="figurine/<?php echo $count; ?>"><?php echo $count; ?></a>
+                            <a class="active"><?php echo $count; ?></a>
                             <?php
                         }
                     }
+                    ?>
+                    </div>
 
-                    else
-                    {
-                        ?>
-                        <a class="active"><?php echo $count; ?></a>
-                        <?php
-                    }
-                }
-                ?>
                 </div>
 
             </div>

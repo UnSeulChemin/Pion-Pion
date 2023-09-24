@@ -6,6 +6,7 @@
 
 /* Partials */
 @import 'components/_partials/header.css';
+@import 'components/_partials/footer.css';
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');

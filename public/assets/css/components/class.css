@@ -98,13 +98,25 @@
     border: 1px solid #F0F0F0;
 }
 
-.display-menu-paginate div
+.display-menu-paginate .display-menu-content
 {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
-.display-menu-paginate div p
+.display-menu-paginate .display-menu-content a:hover
+{
+    color: var(--secondary1);
+}
+
+.display-menu-paginate .display-menu-content div:nth-child(2) 
+{
+    display: flex;
+    gap: 15px;
+}
+
+.display-menu-paginate .display-menu-content p
 {
     padding-bottom: 0;
 }
