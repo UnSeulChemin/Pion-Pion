@@ -23,6 +23,7 @@ function getCard(int $getId = 1): array
             'name' => $row['name'],
             'price' => $row['price'],
             'description' => $row['description'],
+            'new' => $row['new'],
             'created_at' => $row['created_at']
         ];
 
