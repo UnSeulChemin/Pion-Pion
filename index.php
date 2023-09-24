@@ -43,7 +43,17 @@ try
 
         else if ($_GET['page'] === 'plush')
         {
-			plush();
+			if (isset($_GET['id']))
+			{
+				$getId = $_GET['id'];
+
+				plushPaginate($getId);
+			}
+
+			else
+			{
+				plush();
+			}
         }
 
 		else
