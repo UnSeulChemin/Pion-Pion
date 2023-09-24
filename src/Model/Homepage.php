@@ -27,7 +27,7 @@ function getAllFigurine(): array
 {
     $database = dbConnect();
 
-    $statement = $database->query("SELECT * FROM figurine ORDER BY created_at DESC LIMIT 4");
+    $statement = $database->query("SELECT * FROM figurine WHERE new = 'Y' ORDER BY created_at DESC LIMIT 4");
 
     $figurines = [];
     while ($row = $statement->fetch())
@@ -38,6 +38,7 @@ function getAllFigurine(): array
             'category' => $row['category'],
             'price' => $row['price'],
             'description' => $row['description'],
+            'new' => $row['new'],
             'created_at' => $row['created_at']
         ];
 
@@ -52,7 +53,7 @@ function getAllCard(): array
 {
     $database = dbConnect();
 
-    $statement = $database->query("SELECT * FROM card ORDER BY created_at DESC LIMIT 4");
+    $statement = $database->query("SELECT * FROM card WHERE new = 'Y' ORDER BY created_at DESC LIMIT 4");
 
     $cards = [];
     while ($row = $statement->fetch())
@@ -63,6 +64,7 @@ function getAllCard(): array
             'category' => $row['category'],
             'price' => $row['price'],
             'description' => $row['description'],
+            'new' => $row['new'],
             'created_at' => $row['created_at']
         ];
 
@@ -77,7 +79,7 @@ function getAllPlush(): array
 {
     $database = dbConnect();
 
-    $statement = $database->query("SELECT * FROM plush ORDER BY created_at DESC LIMIT 4");
+    $statement = $database->query("SELECT * FROM plush WHERE new = 'Y' ORDER BY created_at DESC LIMIT 4");
 
     $plushs = [];
     while ($row = $statement->fetch())
@@ -88,6 +90,7 @@ function getAllPlush(): array
             'category' => $row['category'],
             'price' => $row['price'],
             'description' => $row['description'],
+            'new' => $row['new'],
             'created_at' => $row['created_at']
         ];
 
