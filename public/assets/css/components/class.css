@@ -54,7 +54,7 @@
 
 .div-title
 {
-    width: 75%;
+    width: 80%;
     background: var(--secondary1);
 
     margin: auto;
@@ -70,6 +70,28 @@
     text-align: left;
 
     padding-bottom: 0;
+}
+
+.div-link
+{
+    width: 250px;
+    background: var(--secondary1);
+
+    margin: 25px auto;
+    border-radius: 2px;
+}
+
+.div-link:hover
+{
+    background: var(--secondary2);
+}
+
+.div-link a
+{
+    font-size: 0.9em;
+    color: var(--white);
+
+    padding: 15px 10px;
 }
 
 .div-text

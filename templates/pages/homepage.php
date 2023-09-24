@@ -58,8 +58,8 @@
 
             </div>
             
-            <div>
-                <p>voir plus..</p>
+            <div class="div-link">
+                <a class="active" href="./">Voir tous les nouveaux ajouts</a>
             </div>
 
         </section>      
