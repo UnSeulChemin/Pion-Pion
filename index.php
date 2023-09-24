@@ -5,6 +5,7 @@ require_once('src/Controllers/HomepageController.php');
 require_once('src/Controllers/FigurineController.php');
 require_once('src/Controllers/CardController.php');
 require_once('src/Controllers/PlushController.php');
+require_once('src/Controllers/NewController.php');
 
 // router
 try
@@ -55,6 +56,11 @@ try
 				plush();
 			}
         }
+
+		else if ($_GET['page'] === 'new')
+		{
+			news();
+		}
 
 		else
 		{
