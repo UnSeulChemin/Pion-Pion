@@ -45,7 +45,7 @@
                         </div>
 
                         <div>
-                            <p><?= $promo['description']; ?></p>
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $promo['uniqid']; ?>"><?= $promo['description']; ?></a>
                         </div>
 
                         <div>

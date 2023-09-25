@@ -45,7 +45,7 @@
                         </div>
 
                         <div>
-                            <p><?= $new['description']; ?></p>
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $new['uniqid']; ?>"><?= $new['description']; ?></a>
                         </div>
 
                         <div>

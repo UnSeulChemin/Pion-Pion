@@ -106,7 +106,7 @@
                         </div>
 
                         <div>
-                            <p><?= $product['description']; ?></p>
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $product['uniqid']; ?>"><?= $product['description']; ?></a>
                         </div>
 
                         <div>
