@@ -25,6 +25,7 @@ function getPlush(int $getId = 1): array
             'description' => $row['description'],
             'new' => $row['new'],
             'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 

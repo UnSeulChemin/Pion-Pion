@@ -7,6 +7,7 @@ require_once('src/Controllers/CardController.php');
 require_once('src/Controllers/PlushController.php');
 require_once('src/Controllers/NewController.php');
 require_once('src/Controllers/PromoController.php');
+require_once('src/Controllers/ShowController.php');
 
 // router
 try
@@ -66,6 +67,21 @@ try
 		else if ($_GET['page'] === 'promo')
 		{
 			promos();
+		}
+
+		else if ($_GET['page'] === 'show')
+		{
+			if (isset($_GET['id']))
+			{
+				$getId = $_GET['id'];
+
+				showId($getId);
+			}
+
+			else
+			{
+				homepage();
+			}
 		}
 
 		else

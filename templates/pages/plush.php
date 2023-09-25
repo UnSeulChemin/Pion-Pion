@@ -33,7 +33,7 @@
                         </div>
 
                         <div>
-                            <p><?= $plush['description']; ?></p>
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>show/<?= $plush['uniqid']; ?>"><?= $plush['description']; ?></a>
                         </div>
 
                         <div>
