@@ -35,7 +35,9 @@
                     <div class="card">
 
                         <figure class="figure-card-image">
-                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category ?>/<?= $new['name']; ?>.jpg" alt="">
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $new['uniqid']; ?>">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category; ?>/<?= $new['name']; ?>.jpg" alt="<?= $category; ?>">
+                            </a>
                             <?= $new['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
                             <span class="abs-date"><?= date('d/m/Y', strtotime($new['created_at'])); ?></span>
                         </figure>
@@ -96,7 +98,9 @@
                     <div class="card">
 
                         <figure class="figure-card-image">
-                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category ?>/<?= $product['name']; ?>.jpg" alt="">
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $product['uniqid']; ?>">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category; ?>/<?= $product['name']; ?>.jpg" alt="<?= $category; ?>">
+                            </a>
                             <?= $product['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
                             <span class="abs-date"><?= date('d/m/Y', strtotime($product['created_at'])); ?></span>
                         </figure>

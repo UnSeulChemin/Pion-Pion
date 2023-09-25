@@ -35,7 +35,9 @@
                     <div class="card">
 
                         <figure class="figure-card-image">
-                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category ?>/<?= $promo['name']; ?>.jpg" alt="">
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $promo['uniqid']; ?>">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category; ?>/<?= $promo['name']; ?>.jpg" alt="<?= $category; ?>">
+                            </a>
                             <?= $promo['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
                             <span class="abs-date"><?= date('d/m/Y', strtotime($promo['created_at'])); ?></span>
                         </figure>

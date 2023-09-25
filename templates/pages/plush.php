@@ -22,7 +22,9 @@
                     <div class="card">
 
                         <figure class="figure-card-image">
-                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/peluches/<?= $plush['name']; ?>.jpg" alt="">
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $plush['uniqid']; ?>">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/peluches/<?= $plush['name']; ?>.jpg" alt="peluche">
+                            </a>
                             <?= $plush['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
                             <?= $plush['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
                             <span class="abs-date"><?= date('d/m/Y', strtotime($plush['created_at'])); ?></span>
