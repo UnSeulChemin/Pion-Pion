@@ -60,6 +60,8 @@ function getAllFigurine(): array
             'price' => $row['price'],
             'description' => $row['description'],
             'new' => $row['new'],
+            'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 
@@ -86,6 +88,8 @@ function getAllCard(): array
             'price' => $row['price'],
             'description' => $row['description'],
             'new' => $row['new'],
+            'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 
@@ -112,6 +116,8 @@ function getAllPlush(): array
             'price' => $row['price'],
             'description' => $row['description'],
             'new' => $row['new'],
+            'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 
@@ -141,6 +147,7 @@ function getProductFigurine(): array
             'description' => $row['description'],
             'new' => $row['new'],
             'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 
@@ -168,6 +175,7 @@ function getProductCard(): array
             'description' => $row['description'],
             'new' => $row['new'],
             'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 
@@ -195,6 +203,7 @@ function getProductPlush(): array
             'description' => $row['description'],
             'new' => $row['new'],
             'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 

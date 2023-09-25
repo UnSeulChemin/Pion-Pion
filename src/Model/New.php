@@ -42,6 +42,7 @@ function getNewFigurine(): array
             'description' => $row['description'],
             'new' => $row['new'],
             'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 
@@ -69,6 +70,7 @@ function getNewCard(): array
             'description' => $row['description'],
             'new' => $row['new'],
             'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 
@@ -96,6 +98,7 @@ function getNewPlush(): array
             'description' => $row['description'],
             'new' => $row['new'],
             'promo' => $row['promo'],
+            'uniqid' => $row['uniqid'],
             'created_at' => $row['created_at']
         ];
 

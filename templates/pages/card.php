@@ -33,7 +33,7 @@
                         </div>
 
                         <div>
-                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>show/<?= $card['uniqid']; ?>"><?= $card['description']; ?></a>
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $card['uniqid']; ?>"><?= $card['description']; ?></a>
                         </div>
 
                         <div>

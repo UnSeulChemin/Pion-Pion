@@ -1,4 +1,4 @@
-<?php $title = "Produit " . $_GET['id']; ?>
+<?php $title = "Identifiant " . $_GET['id']; ?>
 
 <?php ob_start(); ?>
 <main>
@@ -6,7 +6,7 @@
     <section class="section-default">
 
         <div class="div-title">
-            <h2>Produit <?= $_GET['id']; ?></h2>
+            <h2>identifiant <?= $_GET['id']; ?></h2>
         </div>
 
         <section class="section-content">

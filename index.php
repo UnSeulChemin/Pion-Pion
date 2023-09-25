@@ -69,7 +69,7 @@ try
 			promos();
 		}
 
-		else if ($_GET['page'] === 'show')
+		else if ($_GET['page'] === 'identifiant')
 		{
 			if (isset($_GET['id']))
 			{

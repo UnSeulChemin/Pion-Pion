@@ -223,6 +223,16 @@
     flex-direction: column;
 }
 
+.card a
+{
+    color: var(--black);
+}
+
+.card a:hover
+{
+    color: var(--secondary1);
+}
+
 .card p
 {
     padding-bottom: 0;
@@ -263,7 +273,7 @@
     margin-bottom: 25px;
 }
 
-.card div:nth-child(3) p
+.card div:nth-child(3) a
 {
     text-align: left;
 }

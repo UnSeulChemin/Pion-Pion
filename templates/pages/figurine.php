@@ -33,7 +33,7 @@
                         </div>
 
                         <div>
-                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>show/<?= $figurine['uniqid']; ?>"><?= $figurine['description']; ?></a>
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $figurine['uniqid']; ?>"><?= $figurine['description']; ?></a>
                         </div>
 
                         <div>
