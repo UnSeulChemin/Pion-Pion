@@ -61,7 +61,7 @@
             </div>
             
             <div class="div-link">
-                <a class="active" href="new" target="_blank">Voir tous les nouveaux ajouts</a>
+                <a href="new">Voir tous les nouveaux ajouts</a>
             </div>
 
         </section> 
@@ -122,7 +122,7 @@
             </div>
             
             <div class="div-link">
-                <a href="./">Voir toutes les promos</a>
+                <a href="promo">Voir toutes les promos</a>
             </div>
 
         </section>
