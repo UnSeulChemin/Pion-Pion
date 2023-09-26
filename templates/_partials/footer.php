@@ -1,3 +1,3 @@
 <footer>
-    <p>Pion Pion Mise. Tous droits réservés.</p>
+    <p>pion pion mise. tous droits réservés.</p>
 </footer>

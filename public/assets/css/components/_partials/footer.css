@@ -1,6 +1,6 @@
 footer
 {
-    background: #E8E8E8;
+    background: var(--secondary2);
 
     padding: 25px 0;
 }
@@ -9,8 +9,6 @@ footer p
 {
     font-size: 0.8em;
     text-transform: uppercase;
-    text-align: left;
 
-    margin-left: 100px;
     padding-bottom: 0;
 }

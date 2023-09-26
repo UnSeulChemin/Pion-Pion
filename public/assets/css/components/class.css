@@ -1,4 +1,14 @@
 
+/* Header */
+
+.logo-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 /* Flex */
 
 .flex
@@ -83,7 +93,7 @@
 
 .div-link:hover
 {
-    background: var(--secondary2);
+    background: var(--secondary3);
 }
 
 .figure-card-image
@@ -304,7 +314,7 @@
 
 .aside-navbar
 {
-    background: #E8E8E8;
+    background: var(--secondary2);
 
     padding: 15px;
 }
@@ -334,6 +344,11 @@
 }
 
 /* Margin, Padding */
+
+.margin-top
+{
+    margin-top: 20px;
+}
 
 .margin-none
 {

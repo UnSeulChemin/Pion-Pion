@@ -1,8 +1,8 @@
-<header>
+<header class="margin-top">
 
     <nav>
 
-        <div>
+        <div class="logo-title">
 			<img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/logo/64logo.png" alt="Logo">
 			<h1>Pion Pion Mise</h1>
 		</div>
