@@ -3,9 +3,6 @@
     /* Font */
     --font-family: 'Montserrat', 'Open Sans', sans-serif;
 
-    /* Section */
-    --body: #ffffff;
-
     /* Secondary */
     --secondary1: #8BC2D6;
     --secondary2: #E8E8E8;
@@ -17,6 +14,6 @@
     /* Base Color */
     --white: #ffffff;
     --black: #000000;
-    --blue: #0000FF;
     --red: #FF0000;
+    --blue: #0000FF;
 }

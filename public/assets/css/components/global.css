@@ -2,7 +2,7 @@ body
 {
     font-family: var(--font-family);
     text-align: center;
-    background: var(--body);
+    background: var(--white);
 
     /* Change Default */
     box-sizing: border-box;

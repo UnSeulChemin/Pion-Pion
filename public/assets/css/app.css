@@ -2,7 +2,6 @@
 @import 'components/variables.css';
 @import 'components/global.css';
 @import 'components/class.css';
-@import 'components/id.css';
 
 /* Partials */
 @import 'components/_partials/footer.css';
