@@ -1,13 +1,13 @@
 <header class="margin-top">
 
-    <nav class="main-nav">
+    <nav class="main-nav flex-center-column-gap">
 
-        <div class="logo-title">
+        <div class="flex-center-gap">
 			<img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/logo/64logo.png" alt="Logo">
 			<h1>Pion Pion Mise</h1>
 		</div>
 
-        <div class="main-menu">
+        <div class="flex-center-gap">
 
             <?php
             // Accueil

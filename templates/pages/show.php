@@ -6,7 +6,7 @@
     <section class="section-default">
 
         <div class="div-title">
-            <h2>identifiant <?= $_GET['id']; ?></h2>
+            <h2 class="title-h2">identifiant <?= $_GET['id']; ?></h2>
         </div>
 
         <section class="section-content">

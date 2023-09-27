@@ -1,45 +1,4 @@
 
-/* Header */
-
-.logo-title
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.main-nav
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-}
-
-.main-nav-a
-{
-    width: 100px;
-    font-size: 0.9em;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    color: var(--black);
-}
-
-.main-nav-a:hover
-{
-    color: var(--secondary1);
-}
-
-.main-menu
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
 /* Flex */
 
 .flex
@@ -62,6 +21,14 @@
     gap: 20px;
 }
 
+.flex-center-column-gap
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
 .flex-between
 {
     display: flex;
@@ -76,7 +43,33 @@
     justify-content: space-around;
 }
 
+.flex-around-column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Link */
+
+.main-nav-a
+{
+    width: 100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: var(--black);
+}
+
+.main-nav-a:hover
+{
+    color: var(--secondary1);
+}
+
 /* Generic */
+
+
 
 .section-default
 {
