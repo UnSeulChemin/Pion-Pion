@@ -6,7 +6,7 @@
     <section class="margin-top">
 
         <div class="div-title">
-            <h2 class="title-h2" class="title-h2 class="title-h2"">nouveaux ajouts</h2 class="title-h2">
+            <h2 class="title-h2">nouveaux ajouts</h2>
         </div>
 
         <section class="margin-top">
@@ -63,7 +63,7 @@
             </div>
             
             <div class="div-link">
-                <a href="new">Voir tous les nouveaux ajouts</a>
+                <a class="div-link-a" href="new">Voir tous les nouveaux ajouts</a>
             </div>
 
         </section> 
@@ -126,7 +126,7 @@
             </div>
             
             <div class="div-link">
-                <a href="promo">Voir toutes les promos</a>
+                <a class="div-link-a" href="promo">Voir toutes les promos</a>
             </div>
 
         </section>

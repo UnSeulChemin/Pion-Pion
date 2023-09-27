@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 <main>
 
-    <section class="section-page">
+    <section class="margin-top-x2">
 
         <div class="div-text">
             <h2 class="bold">Cartes à collectionner</h2>

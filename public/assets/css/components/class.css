@@ -67,18 +67,84 @@
     color: var(--secondary1);
 }
 
-/* Generic */
-
-
-.section-page
+.div-link-a
 {
-    margin-top: 50px;
+    width: 100%;
+    font-size: 0.9em;
+    color: var(--white);
+
+    padding: 15px 10px;
+    box-sizing: border-box;
 }
 
 
+/* Position */
 
+.figure-card-image
+{
+    position: relative;
+}
 
+.figure-card-image .abs-date
+{
+    font-size: 0.9em;
+    background: var(--white);
 
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    padding: 2px;
+    border-top: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    border-left: 1px solid #F0F0F0;
+}
+
+.figure-card-image .abs-new
+{
+    width: 50px;
+    height: 50px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--secondary1);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.figure-card-image .abs-promo
+{
+    width: 50px;
+    height: 50px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--secondary4);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Generic */
 
 .div-title
 {
@@ -112,78 +178,13 @@
     background: var(--secondary3);
 }
 
-.figure-card-image
-{
-    position: relative;
-}
 
-.figure-card-image .abs-date
-{
-    background: var(--white);
 
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
 
-    padding: 2px;
-    border-top: 1px solid #F0F0F0;
-    border-right: 1px solid #F0F0F0;
-    border-left: 1px solid #F0F0F0;
-}
 
-.figure-card-image .abs-new
-{
-    width: 50px;
-    height: 50px;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--white);
-    background: var(--secondary1);
 
-    position: absolute;
-    top: 0px;
-    left: 0px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.figure-card-image .abs-promo
-{
-    width: 50px;
-    height: 50px;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--white);
-    background: #CD7F32;
-
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.div-link a
-{
-    width: 100%;
-    font-size: 0.9em;
-    color: var(--white);
-
-    padding: 15px 10px;
-    box-sizing: border-box;
-}
 
 .div-text
 {
@@ -255,6 +256,7 @@
 
 .card a
 {
+    display: flex;
     color: var(--black);
 }
 
@@ -368,6 +370,11 @@
 .margin-top
 {
     margin-top: 20px;
+}
+
+.margin-top-x2
+{
+    margin-top: 40px;
 }
 
 .margin-none

@@ -62,7 +62,7 @@
         </div>
 
         <div class="div-link">
-            <a href="<?= isset($_GET['id']) ? '../' : null; ?>./">Retour à l'accueil</a>
+            <a class="div-link-a" href="<?= isset($_GET['id']) ? '../' : null; ?>./">Retour à l'accueil</a>
         </div>
 
         </section>        

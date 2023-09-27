@@ -63,7 +63,7 @@
             </div>
 
             <div class="div-link">
-                <a href="./">Retour à l'accueil</a>
+                <a class="div-link-a" href="./">Retour à l'accueil</a>
             </div>
 
         </section>
