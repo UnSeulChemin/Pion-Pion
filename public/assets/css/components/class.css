@@ -103,11 +103,9 @@
     border-radius: 2px;
 }
 
-.div-title h2
+.title-h2
 {
     color: var(--white);
-    font-weight: bold;
-    text-transform: uppercase;
     text-align: left;
 
     padding-bottom: 0;
@@ -192,10 +190,12 @@
 
 .div-link a
 {
+    width: 100%;
     font-size: 0.9em;
     color: var(--white);
 
     padding: 15px 10px;
+    box-sizing: border-box;
 }
 
 .div-text
@@ -213,6 +213,8 @@
 .div-text p
 {
     text-align: justify;
+
+    padding-bottom: 0;
 }
 
 .display-menu-paginate

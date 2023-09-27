@@ -6,7 +6,7 @@
     <section class="section-default">
 
         <div class="div-title">
-            <h2>nouveaux ajouts</h2>
+            <h2 class="title-h2" class="title-h2 class="title-h2"">nouveaux ajouts</h2 class="title-h2">
         </div>
 
         <section class="section-content">
@@ -69,7 +69,7 @@
         </section> 
 
         <div class="div-title">
-            <h2>produits phares</h2>
+            <h2 class="title-h2">produits phares</h2>
         </div>
 
         <section class="section-content">

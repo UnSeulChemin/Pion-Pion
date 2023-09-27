@@ -1,3 +1,32 @@
+
+/* Scroll Bar */
+
+::-webkit-scrollbar
+{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--secondary2);
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: var(--white);
+}
+
+@supports (scrollbar-color: var(--secondary2) var(--white))
+{
+    *
+    {
+        scrollbar-color: var(--secondary2) var(--white);
+        scrollbar-width: auto;
+    }
+}
+
+/* Generic */
+
 body
 {
     font-family: var(--font-family);
@@ -8,22 +37,34 @@ body
     box-sizing: border-box;
 }
 
+footer
+{
+    background: var(--secondary2);
+
+    padding: 25px 0;
+}
+
+footer p
+{
+    font-size: 0.8em;
+    text-transform: uppercase;
+
+    padding-bottom: 0;
+}
+
+
 h1
 {
-    font-size: 48px;
+    font-size: 2em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 h2
 {
     font-size: 1.2em;
-
-    padding-bottom: 20px;
-}
-
-h3
-{
-    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
 
     padding-bottom: 20px;
 }
