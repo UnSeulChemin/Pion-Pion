@@ -3,13 +3,13 @@
 <?php ob_start(); ?>
 <main>
 
-    <section class="section-default">
+    <section class="margin-top">
 
         <div class="div-title">
             <h2 class="title-h2">produits phares</h2>
         </div>
 
-        <section class="section-content">
+        <section class="margin-top">
 
             <div class="display-card">
 

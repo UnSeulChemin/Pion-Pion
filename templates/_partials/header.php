@@ -1,6 +1,6 @@
 <header class="margin-top">
 
-    <nav class="main-nav flex-center-column-gap">
+    <nav class="flex-center-column-gap">
 
         <div class="flex-center-gap">
 			<img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/logo/64logo.png" alt="Logo">

@@ -11,7 +11,7 @@
             at rerum dolorum error nulla eligendi ipsa, id rem delectus dolor pariatur odit voluptates doloribus.</p>
         </div>
 
-        <section class="section-content">
+        <section class="margin-top">
 
             <div class="display-card">
 
