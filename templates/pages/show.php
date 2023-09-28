@@ -41,16 +41,16 @@
                             <span class="abs-date"><?= date('d/m/Y', strtotime($get['created_at'])); ?></span>
                         </figure>
 
-                        <div>
-                            <p class="bold"><?= str_replace('.', ',', $get['price']); ?> €</p>
+                        <div class="card-price-div">
+                            <p class="padding-none bold"><?= str_replace('.', ',', $get['price']); ?> €</p>
+                        </div>
+
+                        <div class="card-text-div">
+                            <p class="text-left"><?= $get['description']; ?></p>
                         </div>
 
                         <div>
-                            <p><?= $get['description']; ?></p>
-                        </div>
-
-                        <div>
-                            <p>Payer</p>
+                            <a class="pay-a">Payer</a>
                         </div>
 
                     </div>

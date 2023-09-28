@@ -6,7 +6,7 @@
     <section class="margin-top-x2">
 
         <div class="div-text">
-            <h2 class="bold">Peluches</h2>
+            <h2>Peluches</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, doloribus! Expedita ab dolorem sequi quidem,
             at rerum dolorum error nulla eligendi ipsa, id rem delectus dolor pariatur odit voluptates doloribus.</p>
         </div>
@@ -30,16 +30,16 @@
                             <span class="abs-date"><?= date('d/m/Y', strtotime($plush['created_at'])); ?></span>
                         </figure>
 
-                        <div>
-                            <p class="bold"><?= str_replace('.', ',', $plush['price']); ?> €</p>
+                        <div class="card-price-div">
+                            <p class="padding-none bold"><?= str_replace('.', ',', $plush['price']); ?> €</p>
+                        </div>
+
+                        <div class="card-text-div">
+                            <a class="text-left" href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $plush['uniqid']; ?>"><?= $plush['description']; ?></a>
                         </div>
 
                         <div>
-                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $plush['uniqid']; ?>"><?= $plush['description']; ?></a>
-                        </div>
-
-                        <div>
-                            <p>Payer</p>
+                            <a class="pay-a">Payer</a>
                         </div>
 
                     </div>
@@ -55,10 +55,10 @@
                 <div class="display-menu-content">
 
                     <div>
-                        <p>Pages :</p>
+                        <p class="padding-none">Pages :</p>
                     </div>
 
-                    <div>
+                    <div class="display-menu-div">
                     <?php
                     for ($count = 1; $count <= $countPage; $count++)
                     { 

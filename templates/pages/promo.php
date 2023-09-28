@@ -42,16 +42,16 @@
                             <span class="abs-date"><?= date('d/m/Y', strtotime($promo['created_at'])); ?></span>
                         </figure>
 
-                        <div>
-                            <p class="bold"><?= str_replace('.', ',', $promo['price']); ?> €</p>
+                        <div class="card-price-div">
+                            <p class="padding-none bold"><?= str_replace('.', ',', $promo['price']); ?> €</p>
+                        </div>
+
+                        <div class="card-text-div">
+                            <a class="text-left" href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $promo['uniqid']; ?>"><?= $promo['description']; ?></a>
                         </div>
 
                         <div>
-                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $promo['uniqid']; ?>"><?= $promo['description']; ?></a>
-                        </div>
-
-                        <div>
-                            <p>Payer</p>
+                            <a class="pay-a">Payer</a>
                         </div>
 
                     </div>
