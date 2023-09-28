@@ -25,6 +25,50 @@
     }
 }
 
+/* Webkit */
+
+input::-webkit-input-placeholder
+{
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+textarea::-webkit-input-placeholder
+{
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+input::-moz-placeholder
+{
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+textarea::-moz-placeholder
+{
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+input:-ms-input-placeholder
+{
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+textarea:-ms-input-placeholder
+{
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
 /* Generic */
 
 body
@@ -82,4 +126,37 @@ a
     color: var(--black);
 
     display: inline-block;
+}
+
+/* Form */
+
+form div
+{
+    margin-bottom: 20px;
+}
+
+form div input
+{
+    width: 250px;
+    background-color: var(--secondary6);
+
+    padding: 5px;
+    border: 1px solid var(--secondary3);
+    border-radius: 5px;
+}
+
+form div input:focus
+{
+    background-color: var(--secondary1);
+}
+
+#card-element
+{
+    width: 250px;
+    background-color: var(--secondary6);
+
+    margin: auto;
+    padding: 5px;
+    border: 1px solid var(--secondary3);
+    border-radius: 5px;
 }

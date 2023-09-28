@@ -35,7 +35,7 @@
                     <div id="card-element"></div>
                     <div id="card-error" role="alert"></div>
 
-                    <button type="submit">Payer</button>
+                    <a class="pay-a" type="submit">Payer</a>
 
                     <?php
                 }
