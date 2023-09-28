@@ -8,6 +8,7 @@ require_once('src/Controllers/PlushController.php');
 require_once('src/Controllers/NewController.php');
 require_once('src/Controllers/PromoController.php');
 require_once('src/Controllers/IdentifierController.php');
+require_once('src/Controllers/StripeController.php');
 
 // router
 try
@@ -76,6 +77,21 @@ try
 				$getId = $_GET['id'];
 
 				identifierId($getId);
+			}
+
+			else
+			{
+				homepage();
+			}
+		}
+
+		else if ($_GET['page'] === 'stripe')
+		{
+			if (isset($_GET['id']))
+			{
+				$getId = $_GET['id'];
+
+				stripeId($getId);
 			}
 
 			else
