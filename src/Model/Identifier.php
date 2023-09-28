@@ -2,7 +2,7 @@
 
 require_once('src/Db/dbConnect.php');
 
-function getProductById($getId)
+function getIdentifier($getId)
 {
     $database = dbConnect();
 

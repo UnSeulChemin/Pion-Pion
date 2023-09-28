@@ -23,7 +23,7 @@ function getNew(): array
 }
 
 // getProduct
-function getProduct(): array
+function getPromo(): array
 {
     $database = dbConnect();
 
