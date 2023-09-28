@@ -9,5 +9,5 @@ function identifierId($getId)
 	$result = getIdentifier($getId);
 
 	// vue
-	require('templates/pages/identifier.php');
+	require('templates/pages/identifier/identifier.php');
 }

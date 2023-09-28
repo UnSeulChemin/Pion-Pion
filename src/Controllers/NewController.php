@@ -9,5 +9,5 @@ function news()
 	$news = getNews();
 
 	// vue
-	require('templates/pages/new.php');
+	require('templates/pages/homepage/new.php');
 }

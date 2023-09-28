@@ -84,6 +84,16 @@ try
 			}
 		}
 
+		else if ($_GET['page'] === 'register')
+		{
+			card();
+		}
+
+		else if ($_GET['page'] === 'login')
+		{
+			card();
+		}
+
 		else
 		{
 			throw new Exception("La page que vous recherchez n'existe pas.");

@@ -9,5 +9,5 @@ function promos()
 	$promos = getPromos();
 
 	// vue
-	require('templates/pages/promo.php');
+	require('templates/pages/homepage/promo.php');
 }

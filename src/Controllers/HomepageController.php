@@ -10,5 +10,5 @@ function homepage()
 	$promos = getPromo();
 
 	// vue
-	require('templates/pages/homepage.php');
+	require('templates/pages/homepage/homepage.php');
 }
