@@ -6,7 +6,7 @@ function getPlush(int $getId = 1): array
 {
     $database = dbConnect();
 
-    // number of figurine per page
+    // number of plush per page
 	$plushPerPage = 8;
 
 	// limit
@@ -35,20 +35,20 @@ function getPlush(int $getId = 1): array
     return $plushs;
 }
 
-function getPlushCount(int $getId = 1)
+function getPlushCount(int $getId = 1): int
 {
     $database = dbConnect();
 
- 	$compterMot = $database->prepare('SELECT COUNT(*) AS count FROM plush');
-	$compterMot->execute();
+ 	$fetchPlush = $database->prepare('SELECT COUNT(*) AS count FROM plush');
+	$fetchPlush->execute();
 
-	if ($compterMot->rowCount() > 0)
+	if ($fetchPlush->rowCount() > 0)
 	{
-		$nombreDeMot = $compterMot->fetch();
+		$countPlush = $fetchPlush->fetch();
 	}
 
-	$motParPage = 8;
-	$countPage = ceil($nombreDeMot['count'] / $motParPage);
+	$plushPerPage = 8;
+	$countPage = ceil($countPlush['count'] / $plushPerPage);
 
     return $countPage;
 }

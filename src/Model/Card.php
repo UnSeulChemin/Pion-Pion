@@ -6,7 +6,7 @@ function getCard(int $getId = 1): array
 {
     $database = dbConnect();
 
-    // number of figurine per page
+    // number of card per page
 	$cardPerPage = 8;
 
 	// limit
@@ -35,20 +35,20 @@ function getCard(int $getId = 1): array
     return $cards;
 }
 
-function getCardCount(int $getId = 1)
+function getCardCount(int $getId = 1): int
 {
     $database = dbConnect();
 
- 	$compterMot = $database->prepare('SELECT COUNT(*) AS count FROM card');
-	$compterMot->execute();
+ 	$fetchCard = $database->prepare('SELECT COUNT(*) AS count FROM card');
+	$fetchCard->execute();
 
-	if ($compterMot->rowCount() > 0)
+	if ($fetchCard->rowCount() > 0)
 	{
-		$nombreDeMot = $compterMot->fetch();
+		$countCard = $fetchCard->fetch();
 	}
 
-	$motParPage = 8;
-	$countPage = ceil($nombreDeMot['count'] / $motParPage);
+	$cardPerPage = 8;
+	$countPage = ceil($countCard['count'] / $cardPerPage);
 
     return $countPage;
 }

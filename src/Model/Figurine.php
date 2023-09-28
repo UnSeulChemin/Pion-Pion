@@ -35,20 +35,20 @@ function getFigurine(int $getId = 1): array
     return $figurines;
 }
 
-function getCount(int $getId = 1)
+function getCount(int $getId = 1): int
 {
     $database = dbConnect();
 
- 	$compterMot = $database->prepare('SELECT COUNT(*) AS count FROM figurine');
-	$compterMot->execute();
+ 	$fetchFigurine = $database->prepare('SELECT COUNT(*) AS count FROM figurine');
+	$fetchFigurine->execute();
 
-	if ($compterMot->rowCount() > 0)
+	if ($fetchFigurine->rowCount() > 0)
 	{
-		$nombreDeMot = $compterMot->fetch();
+		$countFigurine = $fetchFigurine->fetch();
 	}
 
-	$motParPage = 8;
-	$countPage = ceil($nombreDeMot['count'] / $motParPage);
+	$figurinePerPage = 8;
+	$countPage = ceil($countFigurine['count'] / $figurinePerPage);
 
     return $countPage;
 }
