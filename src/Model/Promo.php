@@ -2,7 +2,6 @@
 
 require_once('src/Db/dbConnect.php');
 
-// getPromos
 function getPromos(): array
 {
     $database = dbConnect();
@@ -23,8 +22,8 @@ function getPromos(): array
 	return $promos;
 }
 
+// getPromos()
 
-// getFigurine
 function getPromosFigurine(): array
 {
     $database = dbConnect();
@@ -52,7 +51,6 @@ function getPromosFigurine(): array
 	return $figurines;
 }
 
-// getCard
 function getPromosCard(): array
 {
     $database = dbConnect();
@@ -80,7 +78,6 @@ function getPromosCard(): array
 	return $cards;
 }
 
-// getPlush
 function getPromosPlush(): array
 {
     $database = dbConnect();

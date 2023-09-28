@@ -2,7 +2,6 @@
 
 require_once('src/Db/dbConnect.php');
 
-// getNews
 function getNews(): array
 {
     $database = dbConnect();
@@ -23,8 +22,8 @@ function getNews(): array
 	return $news;
 }
 
+// getNews()
 
-// getFigurine
 function getNewsFigurine(): array
 {
     $database = dbConnect();
@@ -52,7 +51,6 @@ function getNewsFigurine(): array
 	return $figurines;
 }
 
-// getCard
 function getNewsCard(): array
 {
     $database = dbConnect();
@@ -80,7 +78,6 @@ function getNewsCard(): array
 	return $cards;
 }
 
-// getPlush
 function getNewsPlush(): array
 {
     $database = dbConnect();
