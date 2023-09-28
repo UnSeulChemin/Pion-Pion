@@ -9,7 +9,7 @@
 
     else if (isset($_GET['id']) && !empty($_GET['id']))
     {
-        ?> <a href="../register">accueil</a> <?php
+        ?> <a href="../register">inscription</a> <?php
     }
 
     else
