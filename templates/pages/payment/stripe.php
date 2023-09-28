@@ -1,5 +1,8 @@
 <?php $title = "Stripe " . $_GET['id']; ?>
 
+<?php $cdn = "<script src='https://js.stripe.com/v3/'></script>"; ?>
+<?php $script = "<script src='../public/assets/js/components/stripe.js'></script>"; ?>
+
 <?php ob_start(); ?>
 <main>
 
@@ -13,13 +16,26 @@
 
             <div class="display-card">
 
-                <form action="">
+                <form action="charge" method="post" id="payment-form">
 
                 <?php
                 foreach ($result as $identifier)
                 {   
                     ?>
-                    <p class="padding-none bold"><?= $identifier['price']; ?></p>
+                    <div>
+                        <input type="text" name="firstname" placeholder="Prénom" required>
+                    </div>
+
+                    <div>
+                        <input type="text" name="lastname" placeholder="Nom" required>
+                    </div>
+
+                    <input type="hidden" name="amount" value="<?= $identifier['price']; ?>">
+
+                    <div id="card-element"></div>
+                    <div id="card-error" role="alert"></div>
+
+                    <button type="submit">Payer</button>
 
                     <?php
                 }
