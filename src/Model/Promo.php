@@ -9,9 +9,9 @@ function getPromos(): array
 
     $promos = [];
 
-    $figurines = getPromoFigurine();
-    $cards = getPromoCard();
-    $plushs = getPromoPlush();
+    $figurines = getPromosFigurine();
+    $cards = getPromosCard();
+    $plushs = getPromosPlush();
 
     $promos[] = array_merge($figurines, $cards, $plushs);
 
@@ -25,7 +25,7 @@ function getPromos(): array
 
 
 // getFigurine
-function getPromoFigurine(): array
+function getPromosFigurine(): array
 {
     $database = dbConnect();
 
@@ -53,7 +53,7 @@ function getPromoFigurine(): array
 }
 
 // getCard
-function getPromoCard(): array
+function getPromosCard(): array
 {
     $database = dbConnect();
 
@@ -81,7 +81,7 @@ function getPromoCard(): array
 }
 
 // getPlush
-function getPromoPlush(): array
+function getPromosPlush(): array
 {
     $database = dbConnect();
 

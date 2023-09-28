@@ -8,9 +8,9 @@ function getNew(): array
 
     $news = [];
 
-    $figurines = getAllFigurine();
-    $cards = getAllCard();
-    $plushs = getAllPlush();
+    $figurines = getNewFigurine();
+    $cards = getNewCard();
+    $plushs = getNewPlush();
 
     $news[] = array_merge($figurines, $cards, $plushs);
 
@@ -22,29 +22,29 @@ function getNew(): array
     return $news;
 }
 
-// getProduct
 function getPromo(): array
 {
     $database = dbConnect();
 
-    $products = [];
+    $promos = [];
 
-    $figurines = getProductFigurine();
-    $cards = getProductCard();
-    $plushs = getProductPlush();
+    $figurines = getPromoFigurine();
+    $cards = getPromoCard();
+    $plushs = getPromoPlush();
 
-    $products[] = array_merge($figurines, $cards, $plushs);
+    $promos[] = array_merge($figurines, $cards, $plushs);
 
-    foreach ($products as $key => $value)
+    foreach ($promos as $key => $value)
     {
-        $products = $value;
+        $promos = $value;
     }
 
-	return $products;
+	return $promos;
 }
 
-// getFigurine
-function getAllFigurine(): array
+// getNew()
+
+function getNewFigurine(): array
 {
     $database = dbConnect();
 
@@ -71,8 +71,7 @@ function getAllFigurine(): array
 	return $figurines;
 }
 
-// getCard
-function getAllCard(): array
+function getNewCard(): array
 {
     $database = dbConnect();
 
@@ -99,8 +98,7 @@ function getAllCard(): array
 	return $cards;
 }
 
-// getPlush
-function getAllPlush(): array
+function getNewPlush(): array
 {
     $database = dbConnect();
 
@@ -127,10 +125,9 @@ function getAllPlush(): array
 	return $plushs;
 }
 
+// getPromo()
 
-
-// getFigurine
-function getProductFigurine(): array
+function getPromoFigurine(): array
 {
     $database = dbConnect();
 
@@ -158,7 +155,7 @@ function getProductFigurine(): array
 }
 
 // getCard
-function getProductCard(): array
+function getPromoCard(): array
 {
     $database = dbConnect();
 
@@ -186,7 +183,7 @@ function getProductCard(): array
 }
 
 // getPlush
-function getProductPlush(): array
+function getPromoPlush(): array
 {
     $database = dbConnect();
 

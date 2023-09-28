@@ -77,7 +77,7 @@
             <div class="display-card">
 
                 <?php
-                foreach ($products as $product)
+                foreach ($promos as $product)
                 {   
                     if ($product['category'] == 'figurine')
                     {

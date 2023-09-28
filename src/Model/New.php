@@ -9,9 +9,9 @@ function getNews(): array
 
     $news = [];
 
-    $figurines = getNewFigurine();
-    $cards = getNewCard();
-    $plushs = getNewPlush();
+    $figurines = getNewsFigurine();
+    $cards = getNewsCard();
+    $plushs = getNewsPlush();
 
     $news[] = array_merge($figurines, $cards, $plushs);
 
@@ -25,7 +25,7 @@ function getNews(): array
 
 
 // getFigurine
-function getNewFigurine(): array
+function getNewsFigurine(): array
 {
     $database = dbConnect();
 
@@ -53,7 +53,7 @@ function getNewFigurine(): array
 }
 
 // getCard
-function getNewCard(): array
+function getNewsCard(): array
 {
     $database = dbConnect();
 
@@ -81,7 +81,7 @@ function getNewCard(): array
 }
 
 // getPlush
-function getNewPlush(): array
+function getNewsPlush(): array
 {
     $database = dbConnect();
 

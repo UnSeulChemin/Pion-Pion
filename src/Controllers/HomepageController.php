@@ -7,7 +7,7 @@ function homepage()
 {
 	// functions
 	$news = getNew();
-	$products = getPromo();
+	$promos = getPromo();
 
 	// vue
 	require('templates/pages/homepage.php');
