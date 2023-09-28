@@ -54,6 +54,7 @@ function tryFigurineById($getId)
                 'description' => $row['description'],
                 'new' => $row['new'],
                 'promo' => $row['promo'],
+                'uniqid' => $row['uniqid'],
                 'created_at' => $row['created_at']
             ];
     
@@ -90,6 +91,7 @@ function tryCardById($getId)
                 'description' => $row['description'],
                 'new' => $row['new'],
                 'promo' => $row['promo'],
+                'uniqid' => $row['uniqid'],
                 'created_at' => $row['created_at']
             ];
     
@@ -126,6 +128,7 @@ function tryPlushById($getId)
                 'description' => $row['description'],
                 'new' => $row['new'],
                 'promo' => $row['promo'],
+                'uniqid' => $row['uniqid'],
                 'created_at' => $row['created_at']
             ];
     

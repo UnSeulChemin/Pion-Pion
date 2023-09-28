@@ -27,5 +27,6 @@
 
 </body>
 <script src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/js/jquery-3.7.0.min.js"></script>
+<script src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/js/components/stripe.js"></script>
 <?= isset($script) ? $script : null; ?>
 </html>

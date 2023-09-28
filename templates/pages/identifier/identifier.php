@@ -14,19 +14,19 @@
             <div class="display-card">
 
                 <?php
-                foreach ($result as $get)
+                foreach ($result as $identifier)
                 {   
-                    if ($get['category'] == 'figurine')
+                    if ($identifier['category'] == 'figurine')
                     {
                         $category = 'figurines';
                     }
 
-                    else if ($get['category'] == 'card')
+                    else if ($identifier['category'] == 'card')
                     {
                         $category = 'cartes';
                     }
 
-                    else if ($get['category'] == 'plush')
+                    else if ($identifier['category'] == 'plush')
                     {
                         $category = 'peluches';
                     }
@@ -35,18 +35,20 @@
                     <div class="card">
 
                         <figure class="figure-card-image">
-                            <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category ?>/<?= $get['name']; ?>.jpg" alt="">
-                            <?= $get['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
-                            <?= $get['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
-                            <span class="abs-date"><?= date('d/m/Y', strtotime($get['created_at'])); ?></span>
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $identifier['uniqid']; ?>">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category; ?>/<?= $identifier['name']; ?>.jpg" alt="<?= $category; ?>">
+                            </a>
+                            <?= $identifier['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
+                            <?= $identifier['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
+                            <span class="abs-date"><?= date('d/m/Y', strtotime($identifier['created_at'])); ?></span>
                         </figure>
 
                         <div class="card-price-div">
-                            <p class="padding-none bold"><?= str_replace('.', ',', $get['price']); ?> €</p>
+                            <p class="padding-none bold"><?= str_replace('.', ',', $identifier['price']); ?> €</p>
                         </div>
 
                         <div class="card-text-div">
-                            <p class="text-left"><?= $get['description']; ?></p>
+                            <a class="text-left" href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $identifier['uniqid']; ?>"><?= $identifier['description']; ?></a>
                         </div>
 
                         <div>

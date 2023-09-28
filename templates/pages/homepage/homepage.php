@@ -77,19 +77,19 @@
             <div class="display-card">
 
                 <?php
-                foreach ($promos as $product)
+                foreach ($promos as $promo)
                 {   
-                    if ($product['category'] == 'figurine')
+                    if ($promo['category'] == 'figurine')
                     {
                         $category = 'figurines';
                     }
 
-                    else if ($product['category'] == 'card')
+                    else if ($promo['category'] == 'card')
                     {
                         $category = 'cartes';
                     }
 
-                    else if ($product['category'] == 'plush')
+                    else if ($promo['category'] == 'plush')
                     {
                         $category = 'peluches';
                     }
@@ -98,19 +98,19 @@
                     <div class="card">
 
                         <figure class="figure-card-image">
-                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $product['uniqid']; ?>">
-                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category; ?>/<?= $product['name']; ?>.jpg" alt="<?= $category; ?>">
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $promo['uniqid']; ?>">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/<?= $category; ?>/<?= $promo['name']; ?>.jpg" alt="<?= $category; ?>">
                             </a>
-                            <?= $product['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
-                            <span class="abs-date"><?= date('d/m/Y', strtotime($product['created_at'])); ?></span>
+                            <?= $promo['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
+                            <span class="abs-date"><?= date('d/m/Y', strtotime($promo['created_at'])); ?></span>
                         </figure>
 
                         <div class="card-price-div">
-                            <p class="padding-none bold"><?= str_replace('.', ',', $product['price']); ?> €</p>
+                            <p class="padding-none bold"><?= str_replace('.', ',', $promo['price']); ?> €</p>
                         </div>
 
                         <div class="card-text-div">
-                            <a class="text-left" href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $product['uniqid']; ?>"><?= $product['description']; ?></a>
+                            <a class="text-left" href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $promo['uniqid']; ?>"><?= $promo['description']; ?></a>
                         </div>
 
                         <div>
