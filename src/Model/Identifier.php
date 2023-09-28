@@ -31,6 +31,8 @@ function getIdentifier($getId)
     }
 }
 
+// getIdentifier()
+
 function tryFigurineById($getId)
 {
     $database = dbConnect();
@@ -44,7 +46,7 @@ function tryFigurineById($getId)
         $tryFigurine = [];
         while ($row = $statement->fetch())
         {
-            $product = [
+            $trySuccess = [
                 'id' => $row['id'],
                 'name' => $row['name'],
                 'category' => $row['category'],
@@ -55,7 +57,7 @@ function tryFigurineById($getId)
                 'created_at' => $row['created_at']
             ];
     
-            $tryFigurine[] = $product;
+            $tryFigurine[] = $trySuccess;
         }
     
         return $tryFigurine;
@@ -80,7 +82,7 @@ function tryCardById($getId)
         $tryCard = [];
         while ($row = $statement->fetch())
         {
-            $product = [
+            $trySuccess = [
                 'id' => $row['id'],
                 'name' => $row['name'],
                 'category' => $row['category'],
@@ -91,7 +93,7 @@ function tryCardById($getId)
                 'created_at' => $row['created_at']
             ];
     
-            $tryCard[] = $product;
+            $tryCard[] = $trySuccess;
         }
     
         return $tryCard;
@@ -116,7 +118,7 @@ function tryPlushById($getId)
         $tryPlush = [];
         while ($row = $statement->fetch())
         {
-            $product = [
+            $trySuccess = [
                 'id' => $row['id'],
                 'name' => $row['name'],
                 'category' => $row['category'],
@@ -127,7 +129,7 @@ function tryPlushById($getId)
                 'created_at' => $row['created_at']
             ];
     
-            $tryPlush[] = $product;
+            $tryPlush[] = $trySuccess;
         }
     
         return $tryPlush;

@@ -154,7 +154,6 @@ function getPromoFigurine(): array
 	return $figurines;
 }
 
-// getCard
 function getPromoCard(): array
 {
     $database = dbConnect();
@@ -182,7 +181,6 @@ function getPromoCard(): array
 	return $cards;
 }
 
-// getPlush
 function getPromoPlush(): array
 {
     $database = dbConnect();
