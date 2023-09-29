@@ -4,6 +4,7 @@
 
 # Stripe
 /public/assets/js/components/stripe.js
+charge.php
 
 # Tools
 notes.txt

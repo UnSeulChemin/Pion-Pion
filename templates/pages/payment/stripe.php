@@ -16,7 +16,7 @@
 
             <div class="display-card">
 
-                <form action="charge" method="post" id="payment-form">
+                <form action="<?= isset($_GET['id']) ? '../' : null; ?>charge" method="post" id="payment-form">
 
                 <?php
                 foreach ($result as $identifier)
@@ -35,7 +35,7 @@
                     <div id="card-element"></div>
                     <div id="card-error" role="alert"></div>
 
-                    <a class="pay-a" type="submit">Payer</a>
+                    <button class="payment-a" type="submit">Payer</button>
 
                     <?php
                 }
