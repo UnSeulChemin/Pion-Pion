@@ -9,6 +9,7 @@ function getIdentifier($getId)
     $tryFigurine = tryFigurineById($getId);
     $tryCard = tryCardById($getId);
     $tryPlush = tryPlushById($getId);
+    $tryWish = tryWishById($getId);
 
     if ($tryFigurine != null)
     {
@@ -23,6 +24,11 @@ function getIdentifier($getId)
     else if ($tryPlush != null)
     {
         return $tryPlush;
+    }
+
+    else if ($tryWish != null)
+    {
+        return $tryWish;
     }
 
     else
@@ -136,6 +142,43 @@ function tryPlushById($getId)
         }
     
         return $tryPlush;
+    }
+
+    else
+    {
+        return null;
+    }
+}
+
+function tryWishById($getId)
+{
+    $database = dbConnect();
+
+	$statement = $database->prepare('SELECT * FROM wish WHERE uniqid = :getid');
+	$statement->bindValue('getid', $getId);
+	$statement->execute();
+
+    if ($statement->rowCount() > 0)
+    {
+        $tryWish = [];
+        while ($row = $statement->fetch())
+        {
+            $trySuccess = [
+                'id' => $row['id'],
+                'name' => $row['name'],
+                'category' => $row['category'],
+                'price' => $row['price'],
+                'description' => $row['description'],
+                'new' => $row['new'],
+                'promo' => $row['promo'],
+                'uniqid' => $row['uniqid'],
+                'created_at' => $row['created_at']
+            ];
+    
+            $tryWish[] = $trySuccess;
+        }
+    
+        return $tryWish;
     }
 
     else

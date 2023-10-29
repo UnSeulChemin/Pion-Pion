@@ -23,7 +23,7 @@
 
                         <figure class="figure-card-image">
                             <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $wish['uniqid']; ?>">
-                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/wishs/<?= $wish['name']; ?>.png" alt="wish">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/wishs/<?= $wish['name']; ?>.jpg" alt="wish">
                             </a>
                             <?= $wish['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
                             <?= $wish['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>

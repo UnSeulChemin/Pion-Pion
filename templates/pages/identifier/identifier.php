@@ -31,6 +31,11 @@
                         $category = 'peluches';
                     }
 
+                    else if ($identifier['category'] == 'wish')
+                    {
+                        $category = 'wishs';
+                    }
+
                     ?>
                     <div class="card">
 
