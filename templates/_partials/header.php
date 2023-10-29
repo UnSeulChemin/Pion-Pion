@@ -98,6 +98,30 @@
                 ?> <a class="main-nav-a" href="plush">peluches</a> <?php			
             }
 
+            // Wishs
+            if (isset($_GET['page']) && $_GET['page'] == "wish" && !isset($_GET['id']))
+            {
+                ?> <a <a class="main-nav-a active" href="wish">wishs</a> <?php
+            }
+
+            else if (isset($_GET['id']) && !empty($_GET['id']))
+            {
+                if (isset($_GET['page']) && $_GET['page'] == "wish")
+                {
+                    ?> <a class="main-nav-a active" href="../wish">wishs</a> <?php
+                }
+
+                else
+                {
+                    ?> <a class="main-nav-a" href="../wish">wishs</a> <?php             
+                } 
+            }
+
+            else
+            {
+                ?> <a class="main-nav-a" href="wish">wishs</a> <?php			
+            }
+
             ?>
 
         </div>

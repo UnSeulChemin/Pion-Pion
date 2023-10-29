@@ -5,6 +5,7 @@ require_once('src/Controllers/HomepageController.php');
 require_once('src/Controllers/FigurineController.php');
 require_once('src/Controllers/CardController.php');
 require_once('src/Controllers/PlushController.php');
+require_once('src/Controllers/WishController.php');
 require_once('src/Controllers/NewController.php');
 require_once('src/Controllers/PromoController.php');
 require_once('src/Controllers/IdentifierController.php');
@@ -57,6 +58,21 @@ try
 			else
 			{
 				plush();
+			}
+        }
+
+        else if ($_GET['page'] === 'wish')
+        {
+			if (isset($_GET['id']))
+			{
+				$getId = $_GET['id'];
+
+				wishPaginate($getId);
+			}
+
+			else
+			{
+				wish();
 			}
         }
 

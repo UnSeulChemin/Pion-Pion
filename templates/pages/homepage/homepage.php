@@ -51,7 +51,7 @@
                         </div>
 
                         <div>
-                            <a class="pay-a">Payer</a>
+                            <a class="pay-a" href="<?= isset($_GET['id']) ? '../' : null; ?>stripe/<?= $new['uniqid']; ?>">Payer</a>
                         </div>
 
                     </div>
@@ -114,7 +114,7 @@
                         </div>
 
                         <div>
-                            <a class="pay-a">Payer</a>
+                            <a class="pay-a" href="<?= isset($_GET['id']) ? '../' : null; ?>stripe/<?= $promo['uniqid']; ?>">Payer</a>
                         </div>
 
                     </div>

@@ -1,4 +1,4 @@
-<?php $title = "Cartes"; ?>
+<?php $title = "Wishs"; ?>
 
 <?php ob_start(); ?>
 <main>
@@ -6,7 +6,7 @@
     <section class="margin-top-x2">
 
         <div class="div-text">
-            <h2>Cartes à collectionner</h2>
+            <h2>Ma Wishlist</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, doloribus! Expedita ab dolorem sequi quidem,
             at rerum dolorum error nulla eligendi ipsa, id rem delectus dolor pariatur odit voluptates doloribus.</p>
         </div>
@@ -16,30 +16,30 @@
             <div class="display-card">
 
                 <?php
-                foreach ($cards as $card)
+                foreach ($wishs as $wish)
                 {   
                     ?>
                     <div class="card">
 
                         <figure class="figure-card-image">
-                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $card['uniqid']; ?>">
-                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/cartes/<?= $card['name']; ?>.jpg" alt="carte">
+                            <a href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $wish['uniqid']; ?>">
+                                <img src="<?= isset($_GET['id']) ? '../' : null; ?>public/assets/images/pages/wishs/<?= $wish['name']; ?>.png" alt="wish">
                             </a>
-                            <?= $card['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
-                            <?= $card['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
-                            <span class="abs-date"><?= date('d/m/Y', strtotime($card['created_at'])); ?></span>
+                            <?= $wish['new'] == 'Y' ? '<span class="abs-new">new</span>' : null; ?>
+                            <?= $wish['promo'] == 'Y' ? '<span class="abs-promo">promo</span>' : null; ?>
+                            <span class="abs-date"><?= date('d/m/Y', strtotime($wish['created_at'])); ?></span>
                         </figure>
 
                         <div class="card-price-div">
-                            <p class="padding-none bold"><?= str_replace('.', ',', $card['price']); ?> €</p>
+                            <p class="padding-none bold"><?= str_replace('.', ',', $wish['price']); ?> €</p>
                         </div>
 
                         <div class="card-text-div">
-                            <a class="text-left" href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $card['uniqid']; ?>"><?= $card['description']; ?></a>
+                            <a class="text-left" href="<?= isset($_GET['id']) ? '../' : null; ?>identifiant/<?= $wish['uniqid']; ?>"><?= $wish['description']; ?></a>
                         </div>
 
                         <div>
-                            <a class="pay-a" href="<?= isset($_GET['id']) ? '../' : null; ?>stripe/<?= $card['uniqid']; ?>">Payer</a>
+                            <a class="pay-a" href="<?= isset($_GET['id']) ? '../' : null; ?>stripe/<?= $wish['uniqid']; ?>">Payer</a>
                         </div>
 
                     </div>
