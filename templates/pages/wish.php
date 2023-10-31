@@ -72,14 +72,14 @@
                             if (isset($_GET['id']) && !empty($_GET['id']))
                             {
                                 ?>
-                                <a href="../card/<?php echo $count; ?>"><?php echo $count; ?></a>                   
+                                <a href="../wish/<?php echo $count; ?>"><?php echo $count; ?></a>                   
                                 <?php
                             }
 
                             else
                             {
                                 ?>
-                                <a href="card/<?php echo $count; ?>"><?php echo $count; ?></a>
+                                <a href="wish/<?php echo $count; ?>"><?php echo $count; ?></a>
                                 <?php
                             }
                         }
